@@ -1,0 +1,11 @@
+nano .gitignore
+.DS_Store
+.conda/
+__pycache__/
+
+
+
+.DS_Store
+.conda/
+__pycache__/
+providers.yaml
