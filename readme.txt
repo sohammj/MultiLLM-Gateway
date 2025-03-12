@@ -24,7 +24,7 @@ Prerequisites:
 •	Flask-CORS
 Setup:
 # Clone the repository
-git clone https://github.com/yourusername/multillm-gateway.git
+git clone https://github.com/sohammj/multillm-gateway.git
 cd multillm-gateway
 
 # Install requirements.txt 
