@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MULTILLM GATEWAY</title>
+  <style>
+    /* (Your existing CSS styles) */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #111827, #1f2937, #000);
+      color: white;
+      display: flex;
+      height: 100vh;
+    }
+    .container {
+      display: flex;
+      width: 100%;
+    }
+    .sidebar {
+      width: 250px;
+      background: linear-gradient(to bottom right, #111827, #1f2937);
+      padding: 20px;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .sidebar ul li:hover {
+      background-color: #333;
+    }
+    .sidebar button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007aff;
+      color: white;
+      cursor: pointer;
+    }
+    .chatbox {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(to bottom right, #111827, #1f2937, #000);
+      height: 100vh;
+    }
+    .chat-header {
+      padding: 15px;
+      border-bottom: 1px solid #333;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .chat-content {
+      flex-grow: 1;
+      padding: 15px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      scrollbar-width: thin;
+      scrollbar-color: #555 #242424;
+    }
+    .chat-content::-webkit-scrollbar {
+      width: 8px;
+    }
+    .chat-content::-webkit-scrollbar-thumb {
+      background-color: #555;
+      border-radius: 4px;
+    }
+    .message {
+      padding: 12px;
+      border-radius: 10px;
+      max-width: 70%;
+      word-wrap: break-word;
+      line-height: 1.4;
+      white-space: pre-wrap;
+    }
+    .user-message {
+      align-self: flex-end;
+      background-color: #3b82f6;
+    }
+    .bot-message {
+      align-self: flex-start;
+      background-color: #1f2937;
+    }
+    .chat-input-container {
+      padding: 10px;
+      border-top: 1px solid #333;
+      background-color: #1f1f1f;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .chat-input {
+      display: flex;
+      flex-grow: 1;
+      gap: 10px;
+    }
+    .chat-input input {
+      flex-grow: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+    }
+    .chat-input button {
+      padding: 12px 15px;
+      background-color: #007aff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .chat-input button:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Saved Conversations</h2>
+      <ul id="saved-conversations-list"></ul>
+      <button id="new-chat">New Chat</button>
+      <button id="save-btn">Save Chat</button>
+    </div>
+    <div class="chatbox">
+      <div class="chat-header">MULTILLM GATEWAY</div>
+      <div id="chat-content" class="chat-content"></div>
+      <div class="chat-input-container">
+        <div class="chat-input">
+          <input type="text" id="userInput" placeholder="Type your message..." />
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>

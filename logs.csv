@@ -4,3 +4,92 @@ TogetherAI-Mixtral,100,0.0,1312
 Gemini-Pro,100,0.002,1050
 Gemini-Pro,100,0.002,1167
 HuggingFace-Falcon,100,0.0,403
+HuggingFace-Falcon,100,0.0,4834
+HuggingFace-Falcon,4,0.0,546
+HuggingFace-Falcon,4,0.0,997
+HuggingFace-Falcon,8,0.0,2788
+2025-03-12 22:35:42,HuggingFace-Falcon,7,0.0,2045,success,
+2025-03-12 22:36:54,HuggingFace-Falcon,6,0,738,failure,status_code_404
+2025-03-12 22:36:54,HuggingFace-Falcon,6,0,431,failure,status_code_404
+2025-03-12 22:36:55,HuggingFace-Falcon,6,0,363,failure,status_code_404
+2025-03-12 22:36:55,TogetherAI-Mixtral,6,0.0,619,success,
+2025-03-12 22:38:25,HuggingFace-Falcon,6,0,407,failure,"HTTPSConnectionPool(host='invalid-url-for-testing.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x106027d90>: Failed to resolve 'invalid-url-for-testing.com' ([Errno 8] nodename nor servname provided, or not known)""))"
+2025-03-12 22:38:25,HuggingFace-Falcon,6,0,3,failure,"HTTPSConnectionPool(host='invalid-url-for-testing.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x106031e90>: Failed to resolve 'invalid-url-for-testing.com' ([Errno 8] nodename nor servname provided, or not known)""))"
+2025-03-12 22:38:25,HuggingFace-Falcon,6,0,3,failure,"HTTPSConnectionPool(host='invalid-url-for-testing.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x1060442d0>: Failed to resolve 'invalid-url-for-testing.com' ([Errno 8] nodename nor servname provided, or not known)""))"
+2025-03-12 22:38:26,TogetherAI-Mixtral,6,0.0,745,success,
+2025-03-12 23:04:59,HuggingFace-Falcon,1,0,10102,failure,timeout
+2025-03-12 23:05:09,HuggingFace-Falcon,1,0,10033,failure,timeout
+2025-03-12 23:05:12,HuggingFace-Falcon,1,0.0,2364,success,
+2025-03-12 23:05:22,HuggingFace-Falcon,1,0.0,664,success,
+2025-03-12 23:09:46,HuggingFace-Falcon,4,0,10069,failure,timeout
+2025-03-12 23:09:52,HuggingFace-Falcon,4,0.0,5688,success,
+2025-03-12 23:11:08,HuggingFace-Falcon,1,0.0,408,success,
+2025-03-12 23:11:20,HuggingFace-Falcon,1,0.0,1927,success,
+2025-03-12 23:11:20,HuggingFace-Falcon,1,0.0,2361,success,
+2025-03-12 23:11:21,HuggingFace-Falcon,1,0.0,278,success,
+2025-03-12 23:11:21,HuggingFace-Falcon,1,0.0,752,success,
+2025-03-12 23:11:21,HuggingFace-Falcon,1,0.0,648,success,
+2025-03-12 23:11:21,HuggingFace-Falcon,1,0.0,642,success,
+2025-03-12 23:11:26,HuggingFace-Falcon,1,0.0,7701,success,
+2025-03-12 23:11:28,HuggingFace-Falcon,1,0,10124,failure,timeout
+2025-03-12 23:11:28,HuggingFace-Falcon,1,0,10026,failure,timeout
+2025-03-12 23:11:29,HuggingFace-Falcon,1,0,10062,failure,timeout
+2025-03-12 23:11:29,HuggingFace-Falcon,1,0.0,690,success,
+2025-03-12 23:11:29,HuggingFace-Falcon,1,0.0,815,success,
+2025-03-12 23:11:32,HuggingFace-Falcon,1,0.0,4471,success,
+2025-03-12 23:11:33,HuggingFace-Falcon,1,0.0,914,success,
+2025-03-12 23:11:36,HuggingFace-Falcon,1,0.0,9899,success,
+2025-03-12 23:11:36,HuggingFace-Falcon,1,0.0,252,success,
+2025-03-12 23:11:36,HuggingFace-Falcon,1,0.0,255,success,
+2025-03-12 23:11:38,HuggingFace-Falcon,1,0.0,6160,success,
+2025-03-12 23:11:45,HuggingFace-Falcon,1,0.0,628,success,
+2025-03-12 23:11:46,HuggingFace-Falcon,1,0.0,1029,success,
+2025-03-12 23:11:46,HuggingFace-Falcon,1,0.0,683,success,
+2025-03-12 23:11:46,HuggingFace-Falcon,1,0.0,642,success,
+2025-03-12 23:11:46,HuggingFace-Falcon,1,0.0,684,success,
+2025-03-12 23:11:46,HuggingFace-Falcon,1,0.0,2005,success,
+2025-03-12 23:11:46,HuggingFace-Falcon,1,0.0,666,success,
+2025-03-12 23:23:17,HuggingFace-Falcon,4,0.0,482,success,
+2025-03-12 23:28:20,HuggingFace-Falcon,5,0,10130,failure,timeout
+2025-03-12 23:28:30,HuggingFace-Falcon,5,0,10031,failure,timeout
+2025-03-12 23:28:36,HuggingFace-Falcon,5,0.0,6121,success,
+2025-03-12 23:31:34,HuggingFace-Falcon,5,0.0,663,success,
+2025-03-12 23:34:28,HuggingFace-Falcon,1,0.0,287,success,
+2025-03-12 23:35:36,HuggingFace-Falcon,1,0.0,643,success,
+2025-03-12 23:40:10,HuggingFace-Falcon,2,0.0,8391,success,
+2025-03-12 23:42:37,HuggingFace-Falcon,2,0.0,800,success,
+2025-03-12 23:57:06,HuggingFace-Falcon,76,0.0,1777,success,
+2025-03-12 23:59:49,HuggingFace-Falcon,4,0,10050,failure,timeout
+2025-03-12 23:59:59,HuggingFace-Falcon,4,0,10034,failure,timeout
+2025-03-13 00:00:02,HuggingFace-Falcon,4,0.0,3476,success,
+2025-03-13 00:03:17,HuggingFace-Falcon,4,0.0,11231,success,
+2025-03-13 00:03:22,HuggingFace-Falcon,4,0.0,1088,success,
+2025-03-13 00:03:37,HuggingFace-Falcon,4,0.0,2483,success,
+2025-03-13 00:04:00,HuggingFace-Falcon,4,0,10030,failure,timeout
+2025-03-13 00:04:05,HuggingFace-Falcon,4,0.0,4700,success,
+2025-03-13 00:04:25,HuggingFace-Falcon,11,0,10025,failure,timeout
+2025-03-13 00:04:26,HuggingFace-Falcon,11,0.0,1573,success,
+2025-03-13 00:05:05,HuggingFace-Falcon,1,0.0,1662,success,
+2025-03-13 00:05:41,HuggingFace-Falcon,1,0.0,4955,success,
+2025-03-13 00:06:03,HuggingFace-Falcon,255,0.0,9606,success,
+2025-03-13 00:11:53,HuggingFace-Falcon,4,0.0,1312,success,
+2025-03-13 00:13:48,HuggingFace-Falcon,4,0.0,1260,success,
+2025-03-13 00:15:56,HuggingFace-Falcon,5,0.0,3589,success,
+2025-03-13 00:16:32,HuggingFace-Falcon,3,0.0,1736,success,
+2025-03-13 00:16:47,HuggingFace-Falcon,3,0,10032,failure,timeout
+2025-03-13 00:16:57,HuggingFace-Falcon,3,0,10041,failure,timeout
+2025-03-13 00:17:07,HuggingFace-Falcon,3,0,10045,failure,timeout
+2025-03-13 00:17:08,TogetherAI-Mixtral,3,0.0,623,success,
+2025-03-13 00:17:59,HuggingFace-Falcon,5,0.0,665,success,
+2025-03-13 00:18:52,TogetherAI-Mixtral,4,0.0,885,success,
+2025-03-13 00:18:56,TogetherAI-Mixtral,3,0.0,459,success,
+2025-03-13 00:18:59,TogetherAI-Mixtral,1,0.0,478,success,
+2025-03-13 00:19:00,TogetherAI-Mixtral,1,0.0,562,success,
+2025-03-13 00:19:51,Gemini-Pro,3,6e-05,2949,success,
+2025-03-13 00:20:04,Gemini-Pro,4,8e-05,7031,success,
+2025-03-13 00:50:29,HuggingFace-Falcon,4,0,10149,failure,timeout
+2025-03-13 00:50:39,HuggingFace-Falcon,4,0,10030,failure,timeout
+2025-03-13 00:50:49,HuggingFace-Falcon,4,0,10035,failure,timeout
+2025-03-13 00:50:50,TogetherAI-Mixtral,4,0.0,635,success,
+2025-03-13 00:51:39,HuggingFace-Falcon,4,0.0,719,success,
+2025-03-13 01:07:43,HuggingFace-Falcon,1,0.0,6325,success,
