@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
-from router import call_llm  # Import the call_llm function
+from router import call_llm
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
-CORS(app)  # Enable CORS for all routes
+CORS(app)
 
 @app.route('/generate', methods=['POST', 'OPTIONS'])
 def generate():
@@ -15,7 +15,7 @@ def generate():
         return jsonify({"error": "Missing prompt in request"}), 400
 
     prompt = data["prompt"]
-    response = call_llm(prompt)  # Call your LLM function
+    response = call_llm(prompt)
     return jsonify(response)
 
 @app.route('/stats', methods=['GET'])

@@ -1,4 +1,4 @@
-import yaml
+import yaml 
 
 def load_providers():
     try:
@@ -11,7 +11,6 @@ def load_providers():
         print("Error: Invalid providers.yaml format")
         return []
     
-    # Sort providers based on cost (cheapest first)
     try:
         sorted_providers = sorted(providers, key=lambda x: x["cost_per_1k_tokens"])
     except KeyError:

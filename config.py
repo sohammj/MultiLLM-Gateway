@@ -3,12 +3,18 @@ import yaml
 def load_providers():
     try:
         with open("providers.yaml", "r") as file:
-            data = yaml.safe_load(file)
-        if data is None or "providers" not in data:
-            raise ValueError("Error: `providers.yaml` is empty or incorrectly formatted.")
-        providers = data["providers"]
-        sorted_providers = sorted(providers, key=lambda x: x["cost_per_1k_tokens"])
-        return sorted_providers
-    except Exception as e:
-        print(f"Error loading providers.yaml: {e}")
+            providers = yaml.safe_load(file)["providers"]
+    except FileNotFoundError:
+        print("Error: providers.yaml file not found")
         return []
+    except KeyError:
+        print("Error: Invalid providers.yaml format")
+        return []
+    
+    try:
+        sorted_providers = sorted(providers, key=lambda x: x["cost_per_1k_tokens"])
+    except KeyError:
+        print("Error: Invalid provider configuration")
+        return []
+    
+    return sorted_providers

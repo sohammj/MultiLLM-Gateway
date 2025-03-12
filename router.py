@@ -4,7 +4,6 @@ from config import load_providers
 from logger import log_request
 from transformers import pipeline
 
-# Initialize the summarization pipeline (ensure you have installed transformers and torch)
 summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 providers = load_providers()
@@ -13,23 +12,14 @@ def count_tokens(prompt):
     return len(prompt.split())
 
 def summarize_prompt(prompt, max_length=130, min_length=30):
-    """
-    Uses a transformer model to summarize a long prompt.
-    Adjust max_length and min_length as needed.
-    """
     try:
         summary = summarizer(prompt, max_length=max_length, min_length=min_length, do_sample=False)
         return summary[0]['summary_text']
     except Exception as e:
         print("Summarization error:", e)
-        # In case of any error, return the original prompt (fallback)
         return prompt
 
 def optimize_prompt(prompt, threshold=200):
-    """
-    If the prompt exceeds the threshold (number of tokens), summarize it.
-    Otherwise, return the original prompt.
-    """
     tokens = prompt.split()
     if len(tokens) > threshold:
         print("Prompt too long; summarizing...")
@@ -37,7 +27,6 @@ def optimize_prompt(prompt, threshold=200):
     return prompt
 
 def call_llm(prompt):
-    # Optimize the prompt before processing
     optimized_prompt = optimize_prompt(prompt)
     tokens_used = count_tokens(optimized_prompt)
     
